@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	// fmt.Println("I am Learning Go Languages")
@@ -63,27 +65,70 @@ func main() {
 	// }
 
 	// Switch
-	day := 3
-	switch day {
-	case 1:
-		fmt.Println("Monday")
-	case 2:
-		fmt.Println("Tuesday")
-	case 3:
-		fmt.Println("Wednesday")
-	default:
-		fmt.Println("Unkown number")
-	}
+	// day := 3
+	// switch day {
+	// case 1:
+	// 	fmt.Println("Monday")
+	// case 2:
+	// 	fmt.Println("Tuesday")
+	// case 3:
+	// 	fmt.Println("Wednesday")
+	// default:
+	// 	fmt.Println("Unkown number")
+	// }
 
-	month := "January"
-	switch month {
-	case "January", "March", "May", "July", "August", "October", "December":
-		fmt.Println("31 days")
-	case "February":
-		fmt.Println("28 or 29 days")
-	default:
-		fmt.Println("Invalid month")
-	}
+	// month := "January"
+	// switch month {
+	// case "January", "March", "May", "July", "August", "October", "December":
+	// 	fmt.Println("31 days")
+	// case "February":
+	// 	fmt.Println("28 or 29 days")
+	// default:
+	// 	fmt.Println("Invalid month")
+	// }
+
+	// For Loop
+	// for i:= 0; i<10;i++ {
+	// 	fmt.Println("index is :",i)
+	// }
+	// Like While Loop
+	// counter := 0
+	// for{
+	// 	counter++
+	//     if counter == 10 {
+	//         break
+	//     }
+	//     fmt.Println("index is :", counter)
+	// }
+
+	// number := []int{1, 2, 3, 4, 5}
+	// for index, value := range number {
+	// 	fmt.Printf("Index: %d, Value: %d\n", index, value)
+	// }
+	// str := "Hello, world!"
+	// for idx,val := range str {
+	// 	fmt.Printf("Index: %d, Char Value: %c\n", idx, val)
+	// }	
+
+	// Maps
+	// students := make(map[string]int)
+	// students["John"] = 20	
+	// students["Jane"] = 22
+	// fmt.Println("John's age is:", students["John"])
+	// delete(students, "John")
+	// age,isExits := students["John"] 
+	// fmt.Println("Is John exists:", isExits, "John's age is:", age)
+	// fmt.Println("John's age is:", students["John"])
+
+	// for key,val := range students {
+	// 	fmt.Printf("Key: %s, Value: %d\n", key, val)
+	// }
+	// person := map[string]int{
+	// 	"name"   :10,
+    //     "age"     : 30,
+    //     "address" :20,
+	// }
+	// fmt.Println("Person's age is:", person["age"])
 
 }
 
