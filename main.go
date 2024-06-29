@@ -2,7 +2,25 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
+
+// type Person struct {
+// 	name string
+// 	age  int
+// }
+
+// type Contact struct {
+// 	email   string
+// 	phone   int
+// 	address string
+// }
+
+// type Employee struct {
+// 	person Person
+// 	cont   Contact
+// 	salary float64
+// }
 
 func main() {
 	// fmt.Println("I am Learning Go Languages")
@@ -108,15 +126,15 @@ func main() {
 	// str := "Hello, world!"
 	// for idx,val := range str {
 	// 	fmt.Printf("Index: %d, Char Value: %c\n", idx, val)
-	// }	
+	// }
 
 	// Maps
 	// students := make(map[string]int)
-	// students["John"] = 20	
+	// students["John"] = 20
 	// students["Jane"] = 22
 	// fmt.Println("John's age is:", students["John"])
 	// delete(students, "John")
-	// age,isExits := students["John"] 
+	// age,isExits := students["John"]
 	// fmt.Println("Is John exists:", isExits, "John's age is:", age)
 	// fmt.Println("John's age is:", students["John"])
 
@@ -125,10 +143,44 @@ func main() {
 	// }
 	// person := map[string]int{
 	// 	"name"   :10,
-    //     "age"     : 30,
-    //     "address" :20,
+	//     "age"     : 30,
+	//     "address" :20,
 	// }
 	// fmt.Println("Person's age is:", person["age"])
+
+	// Struct
+	// var p1 Person
+	// p1.name = "John"
+	// p1.age = 30
+	// p2 := Person{name: "John", age: 27}
+	// var p3 = new(Person)
+	// p3.age = 29
+	// fmt.Println("P1 is :", p1, p2, p3)
+
+	// var emp Employee
+	// emp.person = p2
+	// emp.cont = Contact{
+	// 	email:   "john@example.com",
+	//     phone:   1234567890,
+	//     address: "123 Main St",
+	// }
+	// fmt.Println(emp)
+
+	// Pointers
+	// num := 2
+	// ptr := &num
+	// fmt.Println("Value of num is:", &num,"Value of ptr is:", *ptr)
+
+	// Type Conversion
+	// num := 42
+	// fmt.Println("Number is: ", num)
+	// fmt.Printf("Number is: %T \n", num)
+	// floatNum := float32(num)
+	// fmt.Println("Float number is: ", floatNum)
+	// fmt.Printf("Float Type is: %T \n", floatNum)
+	num := 10
+	str := strconv.Itoa(num)
+	fmt.Printf("Type is: %T \n", str)
 
 }
 
