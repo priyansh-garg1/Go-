@@ -8,7 +8,7 @@ import (
 func sayHello() {
 	fmt.Println("Hello from Goroutine")
 	// Sleep for 2 seconds
-	time.Sleep(time.Second * 2)
+	time.Sleep(time.Second * 4)
 	fmt.Println("Goroutine Hello finished")
 }
 
